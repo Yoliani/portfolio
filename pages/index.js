@@ -1,21 +1,28 @@
 import NextLink from 'next/link'
-
 import {
+  Link,
   Container,
   Box,
   Heading,
   Image,
   useColorModeValue,
   Button,
+  List,
+  ListItem,
+  Icon
 } from '@chakra-ui/react'
 import Section from '../components/section'
 import Paragraph from '../components/paragraph'
 import { ChevronRightIcon } from '@chakra-ui/icons'
 import { BioSection, BioYear } from '../components/bio'
+import { IoLogoTwitter, IoLogoInstagram, IoLogoGithub } from 'react-icons/io5'
 
 const Page = () => {
   return (
     <Container>
+    <Box paddingTop="1em">
+
+    </Box>
       <Box
         borderRadius="lg"
         bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
@@ -89,6 +96,38 @@ const Page = () => {
         <Paragraph>
           Music, Read novels and comics, Write poems and stories.
         </Paragraph>
+      </Section>
+
+      <Section>
+        <Heading as="h3" variant="section-title">
+          On the web
+        </Heading>
+        <List>
+          <ListItem>
+            <Link href="https://github.com/Yoliani" target="_blank">
+              <Button
+                variant="ghost"
+                colorScheme="teal"
+                leftIcon={<Icon as={IoLogoGithub} />}
+              >
+                @yoliani
+              </Button>
+            </Link>
+          </ListItem>
+      
+          <ListItem>
+            <Link href="https://twitter.com/EdgardoYoliani" target="_blank">
+              <Button
+                variant="ghost"
+                colorScheme="teal"
+                leftIcon={<Icon as={IoLogoTwitter} />}
+              >
+                @EdgardoYoliani
+              </Button>
+            </Link>
+          </ListItem>
+        
+        </List>
       </Section>
     </Container>
   )
