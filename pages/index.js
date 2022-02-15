@@ -1,12 +1,18 @@
+import NextLink from 'next/link'
+
 import {
   Container,
   Box,
   Heading,
   Image,
+  Link,
   useColorModeValue,
+  Button,
 } from '@chakra-ui/react'
 import Section from '../components/section'
 import Paragraph from '../components/paragraph'
+import { ChevronRightIcon } from '@chakra-ui/icons'
+import { BioSection, BioYear } from '../components/bio'
 
 const Page = () => {
   return (
@@ -52,7 +58,37 @@ const Page = () => {
         <Paragraph>
           I am a systems engineering student, and a coffee adventurer. I like
           challenges, and I like to continually learn different tools and
-          languages, and I like to keep learning them at a medium level.
+          languages. I love solving real-life problems because of the
+          interaction they can have with different people.
+        </Paragraph>
+        <Box align="center" my={4}>
+          <NextLink href="/works">
+            <Button rightIcon={<ChevronRightIcon />} colorScheme="teal">
+              My Portfolio
+            </Button>
+          </NextLink>
+        </Box>
+      </Section>
+      <Section delay={0.2}>
+        <Heading as="h3" variant="section tittle">
+          Bio
+        </Heading>
+        <BioSection>
+          <BioYear>2002</BioYear>
+          Born in Barranquilla, Colombia.
+        </BioSection>
+        <BioSection>
+          <BioYear>2019 to present</BioYear>I started studying systems
+          engineering and industrial engineering.
+        </BioSection>
+      </Section>
+
+      <Section delay={0.3}>
+        <Heading as="h3" variant="section-title">
+          Hobbies ❤️
+        </Heading>
+        <Paragraph>
+          Music, Read novels and comics, Write poems and stories.
         </Paragraph>
       </Section>
     </Container>
