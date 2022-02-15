@@ -1,4 +1,4 @@
-import { Container, Box, Heading, SimpleGrid, Divider } from '@chakra-ui/react'
+import { Container, Heading, SimpleGrid} from '@chakra-ui/react'
 import thumbEcoride from '../public/assets/works/logoecoride.png'
 import thumbNike from '../public/assets/works/nikeeco.png'
 import thumbGabarra from '../public/assets/works/lagabarratransporte.png'
