@@ -15,7 +15,7 @@ import Section from '../components/section'
 import Paragraph from '../components/paragraph'
 import { ChevronRightIcon } from '@chakra-ui/icons'
 import { BioSection, BioYear } from '../components/bio'
-import { IoLogoTwitter, IoLogoInstagram, IoLogoGithub } from 'react-icons/io5'
+import { IoLogoTwitter,  IoLogoGithub } from 'react-icons/io5'
 
 const Page = () => {
   return (
@@ -69,7 +69,7 @@ const Page = () => {
         </Paragraph>
         <Box align="center" my={4}>
           <NextLink href="/works">
-            <Button rightIcon={<ChevronRightIcon />} colorScheme="teal">
+            <Button rightIcon={<ChevronRightIcon />} colorScheme="blue">
               My Portfolio
             </Button>
           </NextLink>
@@ -107,7 +107,7 @@ const Page = () => {
             <Link href="https://github.com/Yoliani" target="_blank">
               <Button
                 variant="ghost"
-                colorScheme="teal"
+                colorScheme="blue"
                 leftIcon={<Icon as={IoLogoGithub} />}
               >
                 @yoliani
@@ -119,7 +119,7 @@ const Page = () => {
             <Link href="https://twitter.com/EdgardoYoliani" target="_blank">
               <Button
                 variant="ghost"
-                colorScheme="teal"
+                colorScheme="blue"
                 leftIcon={<Icon as={IoLogoTwitter} />}
               >
                 @EdgardoYoliani
