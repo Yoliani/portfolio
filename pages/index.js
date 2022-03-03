@@ -15,14 +15,12 @@ import Section from '../components/section'
 import Paragraph from '../components/paragraph'
 import { ChevronRightIcon } from '@chakra-ui/icons'
 import { BioSection, BioYear } from '../components/bio'
-import { IoLogoTwitter,  IoLogoGithub } from 'react-icons/io5'
+import { IoLogoTwitter, IoLogoGithub } from 'react-icons/io5'
 
 const Page = () => {
   return (
     <Container>
-    <Box paddingTop="1em">
-
-    </Box>
+      <Box paddingTop="1em"></Box>
       <Box
         borderRadius="lg"
         bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
@@ -81,11 +79,13 @@ const Page = () => {
         </Heading>
         <BioSection>
           <BioYear>2002</BioYear>
+          <br />
           Born in Barranquilla, Colombia.
         </BioSection>
         <BioSection>
-          <BioYear>2019 to present</BioYear>I started studying systems
-          engineering and industrial engineering.
+          <BioYear>2019 to present</BioYear>
+          <br />I started studying systems engineering and industrial
+          engineering.
         </BioSection>
       </Section>
 
@@ -114,7 +114,7 @@ const Page = () => {
               </Button>
             </Link>
           </ListItem>
-      
+
           <ListItem>
             <Link href="https://twitter.com/EdgardoYoliani" target="_blank">
               <Button
@@ -126,7 +126,6 @@ const Page = () => {
               </Button>
             </Link>
           </ListItem>
-        
         </List>
       </Section>
     </Container>
